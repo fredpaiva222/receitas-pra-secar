@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Receitas para Secar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              orange: {
+                500: '#F97316',
+                600: '#EA580C',
+                700: '#C2410C',
+              },
+              rose: {
+                50: '#FFF1F2',
+                300: '#FDA4AF',
+                500: '#F43F5E',
+              },
+              mint: {
+                50: '#F0FDF4',
+                500: '#22C55E',
+              },
+              cream: {
+                50: '#FFFAF5',
+                100: '#FFF5EB',
+              },
+              neutral: {
+                100: '#F5F5F4',
+                500: '#78716C',
+                700: '#44403C',
+                800: '#292524',
+              }
+            },
+            fontFamily: {
+              display: ['"Cormorant Garamond"', 'serif'],
+              body: ['"DM Sans"', 'sans-serif'],
+              handwritten: ['"Caveat"', 'cursive'],
+            },
+            backgroundImage: {
+              'hero-gradient': 'linear-gradient(135deg, #FFFAF5 0%, #FFF7ED 50%, #FFF1F2 100%)',
+              'cta-gradient': 'linear-gradient(135deg, #F97316 0%, #EA580C 100%)',
+            },
+            boxShadow: {
+              'orange': '0 10px 30px rgba(249, 115, 22, 0.35)',
+              'card': '0 4px 20px rgba(0,0,0,0.08)',
+            },
+            animation: {
+              'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+              'float': 'float 6s ease-in-out infinite',
+              'pulse-slow': 'pulse 3s infinite',
+              'scroll-left': 'scrollLeft 30s linear infinite',
+              'glow': 'glow 2s ease-in-out infinite alternate',
+            },
+            keyframes: {
+              fadeInUp: {
+                'from': { opacity: '0', transform: 'translateY(30px)' },
+                'to': { opacity: '1', transform: 'translateY(0)' },
+              },
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-15px)' },
+              },
+              pulse: {
+                '0%, 100%': { transform: 'scale(1)' },
+                '50%': { transform: 'scale(1.03)' },
+              },
+              scrollLeft: {
+                '0%': { transform: 'translateX(0)' },
+                '100%': { transform: 'translateX(-50%)' },
+              },
+              glow: {
+                '0%': { boxShadow: '0 0 20px rgba(249,115,22,0.3)' },
+                '100%': { boxShadow: '0 0 40px rgba(249,115,22,0.5)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+    <script type="importmap">
+    {
+      "imports": {
+        "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0",
+        "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+        "react/": "https://aistudiocdn.com/react@^19.2.1/",
+        "react": "https://aistudiocdn.com/react@^19.2.1"
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
